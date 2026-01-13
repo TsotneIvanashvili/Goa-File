@@ -1,0 +1,18 @@
+.first{
+    list-style-type: decimal;
+    
+}
+
+.second{
+    list-style-position: inside;
+    border: 1px solid black;
+
+}
+
+.third{
+    list-style-image: url(image.png);
+}
+
+.fourth{
+    list-style: upper-roman outside url(image.png);
+}

@@ -1,0 +1,26 @@
+body{
+    font-family: sans-serif;
+}
+
+input{
+    height: 30px;
+    border-radius: 100px;
+    border: 2px solid rgb(132, 132, 132);
+}
+
+
+input[type = submit]{
+    width: 150px;
+    height: 35px;
+    border: none;
+    background-color: black;
+    color: greenyellow;
+}
+
+
+
+input[type = submit]:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+

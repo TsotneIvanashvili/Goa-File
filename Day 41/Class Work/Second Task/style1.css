@@ -1,0 +1,20 @@
+.inp1{
+    width: 200px;
+    height: 50px;
+    border-radius: 1px 41px 1px 48px;
+}
+.inp2{
+    width: 200px;
+    height: 50px;
+    border-radius: 10% 60% 15% ;
+}
+.inp3{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+}
+.inp4{
+    width: 200px;
+    height: 50px;
+    border-radius: 100% 10% 50% 19%;
+}
