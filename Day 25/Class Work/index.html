@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>საყვარელი მანქანები</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; background-color:#f0f0f0;}
+        header { background-color:#222; color:white; padding:20px; text-align:center;}
+        nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold;}
+        nav a:hover { text-decoration:underline; }
+        main { padding:20px; }
+        section { display:flex; justify-content:space-around; margin-top:20px; }
+        article { background-color:white; padding:15px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.2); width:250px; text-align:center;}
+        footer { background-color:#222; color:white; text-align:center; padding:15px; margin-top:20px;}
+        button { background-color:darkblue; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer; margin-top:10px;}
+        button:hover { background-color:blue; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>ჩემი საყვარელი მანქანები</h1>
+        <nav>
+            <a href="index.html">მთავარი</a>
+            <a href="audi.html">Audi</a>
+            <a href="mercedes.html">Mercedes</a>
+            <a href="bmw.html">BMW</a>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section>
+            <article>
+                <h2>Audi</h2>
+                <img src="audi.jpg" alt="Audi" width="200">
+                <p>ფასი: $40,000</p>
+                <button onclick="location.href='audi.html'">View More</button>
+            </article>
+
+            <article>
+                <h2>Mercedes</h2>
+                <img src="mercedes.jpg" alt="Mercedes" width="200">
+                <p>ფასი: $50,000</p>
+                <button onclick="location.href='mercedes.html'">View More</button>
+            </article>
+
+            <article>
+                <h2>BMW</h2>
+                <img src="bmw.jpg" alt="BMW" width="200">
+                <p>ფასი: $45,000</p>
+                <button onclick="location.href='bmw.html'">View More</button>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 საყვარელი მანქანები. ყველა უფლება დაცულია.
+    </footer>
+</body>
+</html>

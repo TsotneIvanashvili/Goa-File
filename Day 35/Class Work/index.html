@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>პარაგრაფები</title>
+    <style>
+        /* Internal CSS */
+        .dark-bg {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        .normal-bg {
+            background-color: lightgray;
+            color: black;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+                .my-button {
+            background-color: #ff6f61; /* ლამაზი ვარდისფერი */
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+        .my-button:hover {
+            background-color: #ff3b2e;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <!-- 
+id:
+- უნიკალური სელექტორი, უნდა ჰქონდეს მხოლოდ ერთ ელემენტს გვერდზე.
+- გამოიყენება კონკრეტული ელემენტის სტილირებისთვის.
+მაგალითი: <p id="special">Text</p>
+CSS: #special { color:red; }
+
+class:
+- შეიძლება გამოიყენებოდეს მრავალი ელემენტისთვის.
+- გამოიყენება საერთო სტილის რამდენიმე ელემენტისთვის.
+მაგალითი: <p class="highlight">Text</p>
+CSS: .highlight { color:blue; }
+
+შეიძლება ერთი ელემენტი ერთდროულად ჰქონდეს რამდენიმე class.
+-->
+
+
+
+<!-- 
+1) Inline CSS:
+   - პირდაპირ HTML ელემენტში გამოიყენება style ატრიბუტი.
+   - უპირატესობა: მხოლოდ ერთ ელემენტზე მოქმედებს.
+   - ნაკლი: კოდის განმეორებადობა ცუდია, რთულია დიდი საიტის მართვა.
+   მაგალითი: <p style="color:red;">Text</p>
+
+2) Internal CSS:
+   - HTML ფაილის <head> ნაწილში <style> ტეგში წერია.
+   - უპირატესობა: გამოყენებადი მთელ ფაილზე, მარტივი მცირე პროექტებისთვის.
+   - ნაკლი: ვერ გამოიყენება სხვა გვერდებზე (ცალკე HTML–ისთვის).
+
+3) External CSS:
+   - ცალკე .css ფაილში წერია და HTML–ს დაკავშირებულია <link>–ით.
+   - უპირატესობა: ყველაზე ეფექტური და ორგანიზებული, შეგვიძლია გამოიყენოთ მთელი საიტისთვის.
+   - External CSS აქვს ყველაზე დიდი უპირატესობა, რადგან კოდის ხელახლა გამოყენება, მოდულურობა და მარტივი მართვა შეუძლია.
+-->
+
+
+
+
+
+    <p class="dark-bg">პარაგრაფი 1</p>
+    <p class="dark-bg">პარაგრაფი 2</p>
+    <p class="dark-bg">პარაგრაფი 3</p>
+    <p class="normal-bg">პარაგრაფი 4</p>
+    <p class="normal-bg">პარაგრაფი 5</p>
+    <p class="normal-bg">პარაგრაფი 6</p>
+
+
+
+
+
+
+        <button class="my-button">Click Me!</button>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    height: 80px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 24px;
+}
+nav{
+    text-align: center;
+    padding: 20px;
+}
+
+a:hover{
+    color: rgb(203, 203, 203);
+    font-size: 25px;
+        transition-duration: 0.5s;
+
+}
+
+
+
+table{
+    border: 2px solid rgb(196, 196, 196);
+    border-collapse: collapse;
+    font-size: 25px;
+    width: 800px;
+}
+
+th{
+    border: 2px solid rgb(187, 187, 187);
+    padding: 10px;
+}
+
+td{
+    border: 2px solid rgb(187, 187, 187);
+    padding: 10px;
+}
+tr:nth-child(even){
+    background-color: rgb(224, 224, 224);
+}
+
+tr:nth-child(1){
+    background-color: rgb(0, 101, 201);
+    color: white;
+}

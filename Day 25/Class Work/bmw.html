@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>BMW</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; background-color:#e6f0ff;}
+        header { background-color:#003366; color:white; padding:20px; text-align:center;}
+        nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold;}
+        nav a:hover { text-decoration:underline; }
+        main { padding:20px; }
+        section { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:20px; }
+        article { background-color:white; padding:15px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.2); width:250px; text-align:center;}
+        footer { background-color:#003366; color:white; text-align:center; padding:15px; margin-top:20px;}
+        button { background-color:darkorange; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer; margin-top:10px;}
+        button:hover { background-color:orange; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BMW მანქანები</h1>
+        <nav>
+            <a href="index.html">მთავარი</a>
+            <a href="audi.html">Audi</a>
+            <a href="mercedes.html">Mercedes</a>
+            <a href="bmw.html">BMW</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>BMW 3 Series</h2>
+                <img src="bmw_3.jpg" alt="BMW 3 Series" width="200">
+                <p>ფასი: $45,000</p>
+                <button onclick="alert('Congrats! You bought BMW 3 Series!')">Buy</button>
+            </article>
+
+            <article>
+                <h2>BMW X5</h2>
+                <img src="bmw_x5.jpg" alt="BMW X5" width="200">
+                <p>ფასი: $65,000</p>
+                <button onclick="alert('Congrats! You bought BMW X5!')">Buy</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 BMW მანქანები
+    </footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>ფილმების საიტი</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; background-color:#f4f4f9; }
+        header { background-color:#1a1a2e; color:white; padding:20px; text-align:center; }
+        nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
+        nav a:hover { text-decoration:underline; }
+        main { padding:20px; }
+        section { margin-top:30px; }
+        article { background-color:white; padding:15px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.2); margin-bottom:20px; }
+        article img { width:100%; border-radius:10px; }
+        article h2 { color:#162447; }
+        article p { font-size:16px; line-height:1.5; color:#1f4068; }
+        button { background-color:#e43f5a; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer; margin-top:10px; }
+        button:hover { background-color:#d32f2f; }
+        footer { background-color:#1a1a2e; color:white; text-align:center; padding:15px; margin-top:20px; }
+        video { width:100%; border-radius:10px; margin-top:10px; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>ჩემი საყვარელი ფილმები</h1>
+        <nav>
+            <a href="movies.html">მთავარი</a>
+            <a href="#action">საშინელება</a>
+            <a href="#comedy">კომედია</a>
+            <a href="#drama">დრამა</a>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Action Movies Section -->
+        <section id="action">
+            <h2 style="color:#e43f5a;">საშინელება / Action Movies</h2>
+            
+            <article>
+                <h2>John Wick</h2>
+                <img src="john_wick.jpg" alt="John Wick">
+                <p>John Wick არის მძაფრსიუჟეტიანი ფილმი, რომელშიც მთავარ როლს კიანუ რივზი ასრულებს. ფილმი ცნობილი გახდა ელეგანტური მოქმედებით და გასაოცარი კადრებით.</p>
+                <video controls>
+                    <source src="john_wick_trailer.mp4" type="video/mp4">
+                    თქვენი ბრაუზერი არ უჭერს ვიდეოს მხარდაჭერას.
+                </video>
+                <button onclick="alert('თქვენ დაამატეთ John Wick საყვარელ ფილმებში!')">Add to Favorites</button>
+            </article>
+
+            <article>
+                <h2>Avengers: Endgame</h2>
+                <img src="avengers.jpg" alt="Avengers">
+                <p>Avengers: Endgame შედის Marvel-ის კინემატიკური სამყაროს ფინალური ნაწილების სიაში. ფილმი სავსეა მოქმედებით, ემოციებით და გმირობით.</p>
+                <video controls>
+                    <source src="avengers_trailer.mp4" type="video/mp4">
+                    თქვენი ბრაუზერი არ უჭერს ვიდეოს მხარდაჭერას.
+                </video>
+                <button onclick="alert('თქვენ დაამატეთ Avengers: Endgame საყვარელ ფილმებში!')">Add to Favorites</button>
+            </article>
+        </section>
+
+        <!-- Comedy Movies Section -->
+        <section id="comedy">
+            <h2 style="color:#f9a826;">კომედია / Comedy Movies</h2>
+            
+            <article>
+                <h2>The Mask</h2>
+                <img src="the_mask.jpg" alt="The Mask">
+                <p>The Mask არის კომედიური ფილმი ჯიმ ქერი-თან მთავარ როლში. ფილმი ცნობილია სახალისო სცენებითა და განსაკუთრებული ეფექტებით.</p>
+                <button onclick="alert('თქვენ დაამატეთ The Mask საყვარელ ფილმებში!')">Add to Favorites</button>
+            </article>
+
+            <article>
+                <h2>Home Alone</h2>
+                <img src="home_alone.jpg" alt="Home Alone">
+                <p>Home Alone კლასიკური ქმართა კომედიაა, რომელშიც ბავშვი მარტო რჩება სახლში და იცავს სახლს ქურდებისგან.</p>
+                <button onclick="alert('თქვენ დაამატეთ Home Alone საყვარელ ფილმებში!')">Add to Favorites</button>
+            </article>
+        </section>
+
+        <!-- Drama Movies Section -->
+        <section id="drama">
+            <h2 style="color:#162447;">დრამა / Drama Movies</h2>
+            
+            <article>
+                <h2>The Pursuit of Happyness</h2>
+                <img src="pursuit_of_happyness.jpg" alt="The Pursuit of Happyness">
+                <p>ფილმი წარმოადგენს ემოციურ დრამას, სადაც მთავარ გმირს კრიზისის მიუხედავად უწევს ოჯახის შენარჩუნება და ოცნების განხორციელება.</p>
+                <video controls>
+                    <source src="pursuit_trailer.mp4" type="video/mp4">
+                    თქვენი ბრაუზერი არ უჭერს ვიდეოს მხარდაჭერას.
+                </video>
+                <button onclick="alert('თქვენ დაამატეთ The Pursuit of Happyness საყვარელ ფილმებში!')">Add to Favorites</button>
+            </article>
+
+            <article>
+                <h2>Forrest Gump</h2>
+                <img src="forrest_gump.jpg" alt="Forrest Gump">
+                <p>Forrest Gump კლასიკური ფილმია, რომელიც აერთიანებს დრამას, კომედიას და ემოციებს. მთავარ როლში ტომ ჰენქსი თამაშობს.</p>
+                <video controls>
+                    <source src="forrest_gump_trailer.mp4" type="video/mp4">
+                    თქვენი ბრაუზერი არ უჭერს ვიდეოს მხარდაჭერას.
+                </video>
+                <button onclick="alert('თქვენ დაამატეთ Forrest Gump საყვარელ ფილმებში!')">Add to Favorites</button>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 ჩემი საყვარელი ფილმები. ყველა უფლება დაცულია.
+    </footer>
+
+</body>
+</html>

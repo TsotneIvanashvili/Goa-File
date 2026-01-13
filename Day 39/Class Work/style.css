@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    height: 80px;
+}
+
+.navA{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 24px;
+}
+nav{
+    text-align: center;
+    padding: 20px;
+}
+
+.navA:hover{
+    color: rgb(203, 203, 203);
+    font-size: 25px;
+        transition-duration: 0.5s;
+
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+        text-align: center;
+
+    transition-duration: 1s;
+}
+
+h3:hover{
+        text-align: center;
+
+    font-size: 35px;
+    color: gray;
+}
+
+
+
+.link{
+    color: black;  
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+.link:hover{
+    font-size: 40px;
+    color: rgb(5, 0, 150);
+}

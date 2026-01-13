@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+GET — გამოიყენება მონაცემების გადაცემისთვის URL-ის საშუალებით. 
+       ნაკლებად უსაფრთხოა, რადგან მონაცემი ჩანს ბარათში. 
+       ჩვეულებრივ გამოიყენება ძებნის ფორმებში. 
+
+POST — გამოიყენება მონაცემების უსაფრთხოდ გადაცემისთვის სერვერზე. 
+       მონაცემები არ ჩანს URL-ში. გამოიყენება რეგისტრაციისა და ლოგინის ფორმებში.
+-->
+
+
+<!-- 
+form — ფორმის შექმნა, სადაც შეგვიძლია მომხმარებლის მონაცემების შეყვანა.
+label — აღწერას აძლევს input-ს, ზრდის ხელმისაწვდომობას.
+input — ველი მონაცემის შესაყვანად. ტიპი დამოკიდებულია ატრიბუტზე type.
+-->
+
+<form action="/submit" method="post">
+    <label for="name">სახელი:</label>
+    <input type="text" id="name" name="name" placeholder="შეიყვანეთ თქვენი სახელი"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="შეიყვანეთ თქვენი Email"><br><br>
+
+    <label for="password">პაროლი:</label>
+    <input type="password" id="password" name="password" placeholder="შეიყვანეთ პაროლი"><br><br>
+
+    <button type="submit">რეგისტრაცია</button>
+</form>
+
+
+
+
+
+<form>
+    <input type="text" placeholder="Text ველი"><br>
+    <input type="password" placeholder="Password ველი"><br>
+    <input type="email" placeholder="Email ველი"><br>
+    <input type="number" placeholder="Number ველი"><br>
+    <input type="tel" placeholder="Telephone ველი"><br>
+    <input type="url" placeholder="URL ველი"><br>
+    <input type="date"><br>
+    <input type="time"><br>
+    <input type="checkbox"> Check Box<br>
+    <input type="radio"> Radio Button<br>
+    <input type="color"><br>
+    <input type="range"><br>
+    <input type="file"><br>
+    <input type="submit" value="Submit"><br>
+</form>
+
+
+
+
+<form action="/submit" method="post">
+    <label for="address">მისამართი:</label>
+    <input type="text" id="address" name="address" placeholder="შეიყვანეთ თქვენი მისამართი"><br><br>
+
+    <label for="phone">ტელეფონის ნომერი:</label>
+    <input type="tel" id="phone" name="phone" placeholder="შეიყვანეთ თქვენი ტელეფონის ნომერი"><br><br>
+
+    <button type="submit">გაგზავნა</button>
+</form>
+
+
+</body>
+</html>

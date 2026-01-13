@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Mercedes</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; background-color:#f0f0f5;}
+        header { background-color:#222; color:white; padding:20px; text-align:center;}
+        nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold;}
+        nav a:hover { text-decoration:underline; }
+        main { padding:20px; }
+        section { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:20px; }
+        article { background-color:white; padding:15px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.2); width:250px; text-align:center;}
+        footer { background-color:#222; color:white; text-align:center; padding:15px; margin-top:20px;}
+        button { background-color:green; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer; margin-top:10px;}
+        button:hover { background-color:darkgreen; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mercedes მანქანები</h1>
+        <nav>
+            <a href="index.html">მთავარი</a>
+            <a href="audi.html">Audi</a>
+            <a href="mercedes.html">Mercedes</a>
+            <a href="bmw.html">BMW</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>Mercedes C-Class</h2>
+                <img src="mercedes_c.jpg" alt="Mercedes C-Class" width="200">
+                <p>ფასი: $50,000</p>
+                <button onclick="alert('Congrats! You bought Mercedes C-Class!')">Buy</button>
+            </article>
+
+            <article>
+                <h2>Mercedes GLE</h2>
+                <img src="mercedes_gle.jpg" alt="Mercedes GLE" width="200">
+                <p>ფასი: $70,000</p>
+                <button onclick="alert('Congrats! You bought Mercedes GLE!')">Buy</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 Mercedes მანქანები
+    </footer>
+</body>
+</html>
