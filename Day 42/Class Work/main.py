@@ -27,7 +27,7 @@ fruits.difference(union)
 
 # 3) შექმენი dictionary სადაც გექნება: სახელი, გვარი, ასაკი, საყვარელი სპორტი, საბოლოოდ დაბეჭდეთ გასაღებები, მნიშვნელობა და ყველა ერთად.
 
-user ={
+user = {
     "name": "Tsotne",
     "Lname": "Ivanashvili",
     "age": 17,
@@ -36,3 +36,15 @@ user ={
 
 
 print(user.keys())
+
+
+# DAMATEBITI!!!
+
+names = ["tsotne", "Alisoha", "Nika", "Gio", "Sandro"]
+names2 = []
+
+for i in names :
+    if "a" in i:
+        names2.append(i)
+
+print(names2)
