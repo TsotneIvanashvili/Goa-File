@@ -40,6 +40,7 @@ print(user.keys())
 
 # DAMATEBITI!!!
 
+#1)
 names = ["tsotne", "Alisoha", "Nika", "Gio", "Sandro"]
 names2 = []
 
@@ -48,3 +49,60 @@ for i in names :
         names2.append(i)
 
 print(names2)
+
+
+
+
+#2)You are given a list of usernames. Create a new list that contains only usernames longer than 5 characters.
+user = ["alex", "charlotte", "max", "daniel", "li"]
+newUser = []
+
+for i in user:
+    if len(i) > 5:
+        newUser.append(i)
+
+print(newUser)
+
+
+
+
+# 3)Given a list of numbers, create a new list where: Only positive numbers are kept, Each kept number is multiplied by 10
+
+nums = [-3, 0, 2, 5, -1]
+positiveNums = []
+
+for i in nums:
+    if i > 0 :
+        i = i * 10
+        positiveNums.append(i)
+
+print(positiveNums)
+
+
+
+# 4)Given a list of words, count how many words contain the letter “e”.
+
+words = ["tree", "sun", "pen", "sky", "apple"]
+count = 0
+for i in words:
+    if "e" in i:
+       count += 1
+
+print(count)
+
+
+# 5)Given a list of numbers, find the largest even number.
+number = [3, 7, 2, 9, 10, 5]
+maxx = []
+
+for i in number:
+    if i % 2 == 0:
+        maxx.append(i)
+
+if len(maxx) == 0:
+    print("There Are No Even Numbers")
+else:
+    print(f"Biggest Even Number: {max(maxx)}")
+
+
+
