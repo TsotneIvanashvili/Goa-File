@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>ჩემი ვებსაიტი</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+        }
+        .profile {
+            background-color: #d1e7dd;
+            padding: 20px;
+            margin: 20px auto;
+            width: 50%;
+            border-radius: 10px;
+        }
+        img {
+            width: 200px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+<div> გამოიყენება გვერდის სხვადასხვა სექციის ან ელემენტის დაჯგუფებისთვის. 
+ეს გვეხმარება:
+1. სხვადასხვა ელემენტების ორგანიზებაში და layout-ის შექმნაში.
+2. CSS-ით მარტივად გასტილებაში, რადგან შეგვიძლია ერთ div-ს მივანიჭოთ ფერი, padding, margin, border და ა.შ.
+3. გვაძლევს უფრო ლოგიკურ HTML სტრუქტურას, რაც makes the code readable and maintainable.
+-->
+
+
+<!-- 
+<div> არის block-level ელემენტი.
+- იწყებს ახალ ხაზიდან და ფართობს მთელ ხელმისაწვდომ სიგანეზე.
+- შეიძლება შეიცავდეს სხვა block და inline ელემენტებს.
+მაგალითი:
+-->
+
+<div style="background-color: lightblue; padding: 10px;">
+    ეს არის block-level ელემენტი (div)
+    <p>შიგნით შესაძლებელია სხვა block ელემენტის განთავსება</p>
+</div>
+
+<!-- Inline ელემენტები, მაგალითად <span>, არ იწყებენ ახალ ხაზს და ჩვეულებრივ ვერ შეიცავენ block ელემენტებს. -->
+
+
+
+
+<div class="profile">
+    <h1>გიორგი ივანაშვილი</h1>
+    <img src="my_photo.jpg" alt="ჩემი ფოტო">
+    <p>საყვარელი პროგრამირების ენა: Python</p>
+    <p>ჰობი: თამაში, კოდირება, მუსიკის მოსმენა</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Explore the World</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Body სტილი */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* მყუდრო ცისფერი ფონური ფერი */
+        }
+
+        /* Header */
+        header {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        /* ნავიგაცია */
+        nav {
+            background-color: #104e8b;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #1874cd;
+        }
+
+        /* მთავარი კონტენტი */
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        /* სექციები */
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: #1e90ff;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            font-size: 18px;
+            color: #333333;
+        }
+
+        /* ფოტოები */
+        .section-img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+
+        /* Buttons */
+        button {
+            background-color: #32cd32;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #228b22;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Ids and classes */
+        #about {
+            background-color: #e6f2ff;
+        }
+
+        #destinations {
+            background-color: #fff0f5;
+        }
+
+        #contact {
+            background-color: #fff8dc;
+        }
+
+        .highlight {
+            color: #ff4500;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Explore the World</h1>
+    <p>Discover new places, adventures, and memories</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- Main Container -->
+<div class="container">
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to <span class="highlight">Explore the World</span>, your ultimate travel guide. 
+           We provide detailed guides, travel tips, and exciting destinations all over the globe!</p>
+        <img src="about.jpg" alt="Travel Team" class="section-img">
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+        <ul>
+            <li>Paris, France</li>
+            <li>Bali, Indonesia</li>
+            <li>New York, USA</li>
+            <li>Tokyo, Japan</li>
+            <li>Goa, India</li>
+        </ul>
+        <p>Click the button below to see detailed travel packages.</p>
+        <button>Explore Packages</button>
+        <img src="destinations.jpg" alt="Destinations" class="section-img">
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@exploreworld.com</p>
+        <p>Phone: +995 555 123 456</p>
+        <p>Address: 123 Travel Street, Tbilisi, Georgia</p>
+        <button>Send Message</button>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Explore the World. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

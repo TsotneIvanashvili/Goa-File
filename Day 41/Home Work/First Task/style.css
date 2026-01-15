@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Armata&display=swap');
+
+
+body {
+    background-color: #000000;
+    margin: 20px;
+    font-family: "Armata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    color: greenyellow; 
+    text-align: center;
+}
+
+li{
+    color: greenyellow;
+}
+
+p {
+    color: greenyellow;
+    font-size: 16px;
+}
+
+ul {
+    background-color: #000000;
+    padding: 10px;
+    border: 1px solid greenyellow;
+    list-style: decimal inside;
+}
+
+a {
+    color: greenyellow;
+    text-decoration: underline;
+
+}
+
+
+img {
+    border: 3px solid greenyellow;
+    border-radius: 10px;
+    width: 500px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #005204;
+    padding: 8px;
+    text-align: center;
+    color: greenyellow;
+}
+
+th {
+    background-color: #2a2a2a;
+}
+
+h2{
+    color: greenyellow;
+}

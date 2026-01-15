@@ -1,0 +1,13 @@
+ul{
+    list-style-type: square;
+    list-style-position: inside;
+    border: 1px solid black;
+}
+
+
+
+ol{
+    list-style-type: upper-roman;
+    list-style-position: outside;
+    border: 1px solid black;
+}
