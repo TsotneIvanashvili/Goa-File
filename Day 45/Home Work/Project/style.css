@@ -9,7 +9,6 @@ body{
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
-    height: 1000vh;
 }
 
 header{
@@ -107,7 +106,7 @@ button:hover{
 }
 
 .vid{
-    color: rgb(255, 244, 244);
+    color: #e3e3e3;
     background-color: #8b0108;
     height: 50px;
     width: 50px;
@@ -120,11 +119,16 @@ button:hover{
     margin-right: 10px;
 }
 
+
+
 #movies .featured{
-    color: #8b0108;
+    color: #e3e3e3;
     display: flex;
     align-items: center;
-    margin-left: 40px;    
+    padding-left: 40px;
+    border-bottom: 1px solid red;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .movieCard {
@@ -174,4 +178,27 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+#movies2 .featured{
+    color: #e3e3e3;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    border-bottom: 1px solid red;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#movies2{
+    background-image: url("images/ComingSoon/Screenshot\ 2026-01-24\ 230010.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
 }
