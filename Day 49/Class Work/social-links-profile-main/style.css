@@ -1,0 +1,73 @@
+body{
+    background-color:  hsl(0, 0%, 8%);
+}
+
+main{
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container{
+    background-color: hsl(0, 0%, 12%);
+    width: 380px;
+    height: 650px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img{
+    width: 110px;
+    height: 110px;
+    border-radius: 900px;
+}
+
+.upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    color: white;
+}
+
+h2{
+    color: hsl(75, 94%, 57%) ;
+}
+
+.lower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+button{
+    width: 300px;
+    height: 40px;
+    background-color: hsl(0, 0%, 20%);
+    border: navajowhite;
+    color: white;
+    border-radius: 10px;
+}
+
+p{
+    color: white;
+}
+
+button:active{
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+}
+
