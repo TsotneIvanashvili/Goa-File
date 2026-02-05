@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#perfume{
+    width: 300px;
+    height: 500px;
+}
+
+p{
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    line-height: 1.8;
+    
+}
+
+.text{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 80%;
+}
+
+.main-text{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: 700;
+}
+
+#price{
+    color: hsl(158, 36%, 37%);
+}
+
+#class{
+    width: 18px;
+}
+
+sub{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1{
+    font-size: 34px;
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+
+.sub{
+    font-size: 16px;
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
