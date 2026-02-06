@@ -60,6 +60,9 @@ p{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-color: hsl(225, 100%, 94%);
+    border-radius: 10px;
+    height: 70px;
 }
 
 a{
@@ -85,4 +88,18 @@ a{
     font-size: 16px;
     color: hsl(224, 23%, 55%);
     font-weight: 700;
+}
+
+#button:active{
+    background-color: rgb(95, 32, 197);
+    box-shadow: 2px 2px 10px rgb(95, 32, 197);
+
+}
+
+a:active{
+    text-decoration: none;
+}
+
+#cancel:active{
+    color: black;
 }
