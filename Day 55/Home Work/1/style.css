@@ -1,0 +1,90 @@
+div{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    gap: 20px;
+}
+
+.h1{
+    background-image: url(./4k-nature-ztbad1qj8vdjqe0p.jpg);
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    background-size: cover;
+    background-position: center; 
+}
+
+.h2{
+    background-image: url(./batumi.avif);
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    background-size: cover;
+    background-position: center; 
+}
+
+.h3{
+    background-image: url(./misurina-sunset_181624-34793.avif);
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    background-size: cover;
+    background-position: center; 
+}
+
+.h4{
+    background-image: url(./nature-4k-pc-full-hd-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    background-size: cover;
+    background-position: center; 
+}
+
+.h5{
+    background-image: url(./photo-1506104489822-562ca25152fe.avif);
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    background-size: cover;
+    background-position: center; 
+}
+
+.h6{
+    background-image: url(./31189.jpg);
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    background-size: cover;
+    background-position: center; 
+}
+
