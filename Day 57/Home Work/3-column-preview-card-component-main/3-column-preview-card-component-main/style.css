@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 20px;
+  width: 100%;
+  max-width: 920px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  padding: 48px;
+}
+
+.card img {
+  width: 64px;
+  margin-bottom: 36px;
+}
+
+.card h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  margin-bottom: 28px;
+}
+
+.card p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.card .btn {
+  align-self: end;
+  display: inline-block;
+  width: fit-content;
+  padding: 12px 32px;
+  border-radius: 25px;
+  background-color: hsl(0, 0%, 95%);
+  text-decoration: none;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.9rem;
+  border: 2px solid hsl(0, 0%, 95%);
+  transition-duration: 0.3s;
+}
+
+.card .btn:hover{
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.sedans .btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.suvs .btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.luxury .btn {
+  color: hsl(179, 100%, 13%);
+}
+

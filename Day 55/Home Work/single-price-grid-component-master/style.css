@@ -1,15 +1,123 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-main{
-    height: 98vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  background-color: hsl(204, 43%, 93%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.second{
-    background-color: hsl(179, 62%, 43%);
+main {
+  padding: 20px;
+  width: 100%;
+  max-width: 640px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.community {
+  grid-column: 1 / -1;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.community h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.community .highlight {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.community .description {
+  color: hsl(218, 22%, 67%);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.subscription {
+  background-color: hsl(179, 62%, 43%);
+  color: #fff;
+  padding: 40px;
+}
+
+.subscription h2 {
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+}
+
+.subscription .price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.subscription .price span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.subscription .price {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+.subscription .price span {
+  color: #fff;
+}
+
+.subscription .access {
+  font-size: 0.9rem;
+  color: hsla(0, 0%, 100%, 0.7);
+  margin-bottom: 26px;
+}
+
+.subscription button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: hsl(71, 73%, 54%);
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.whyUs {
+  background-color: hsla(179, 62%, 43%, 0.85);
+  color: #fff;
+  padding: 40px;
+}
+
+.whyUs h2 {
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+}
+
+.whyUs ul {
+  list-style: none;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: hsla(0, 0%, 100%, 0.7);
 }

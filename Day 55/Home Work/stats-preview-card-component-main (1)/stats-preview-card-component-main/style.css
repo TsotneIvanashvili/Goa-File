@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  background-color: hsl(233, 47%, 7%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 20px;
+  width: 100%;
+  max-width: 1140px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: hsl(244, 37%, 16%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.content {
+  padding: 60px;
+  display: grid;
+  gap: 24px;
+  align-content: center;
+}
+
+.content h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 2.2rem;
+  line-height: 1.3;
+}
+
+.content h1 .accent {
+  color: hsl(277, 64%, 61%);
+}
+
+.content .description {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.7;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.stat {
+  display: grid;
+  gap: 6px;
+}
+
+.stat .number {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.stat .label {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.image {
+  position: relative;
+}
+
+.image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: hsla(277, 64%, 61%, 0.45);
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
