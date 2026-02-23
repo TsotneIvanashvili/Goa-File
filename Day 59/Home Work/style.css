@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow", sans-serif;
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+main{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.header button{
+    background-color: #E8EFF2;
+    border: none;
+    border-radius: 8px;
+    color: #162542;
+    font-size: 16px;
+    font-weight: 700;
+    width: 175px;
+    height: 58px;
+    transition-duration: 0.3s;
+    box-shadow: #E8EFF2 2px 2px 8px;
+
+}
+
+.header button:hover{
+    background-color: #162542;
+    color: #E8EFF2;
+    box-shadow: #162542 2px 2px 8px;
+
+}
+
+
+.order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.order .orange{
+    box-shadow: #8b8b8b 1px 1px 9px;
+    border-radius: 22px;
+    width: 540px;
+    height: 480px;
+    background-image: url(./images/orangeKeyboard.svg);
+}
+
+
+.text{
+    width: 445px;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.text h1{
+    color: #162542;
+    font-size: 56px;
+    font-weight: 900;
+}
+
+.text p{
+    color: #7B8BAD;
+    font-size: 18px;
+    font-weight: 500;
+        line-height: 26px;
+
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.buttons button{
+    width: 175px;
+    height: 58px;
+    background-color: #F16718;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: #F16718 2px 2px 8px;
+    transition-duration: 0.3s;
+}
+
+.buttons button:hover{
+    background-color: #FF9B62;
+}
+
+.buttons p{
+    color: #7B8BAD;
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    gap: 100px;
+}
+
+.text2{
+    width: 255px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text2 h2{
+    font-size: 32px;
+    font-weight: 900;
+    color: #162542;
+}
+
+.text2 p{
+    color: #7B8BAD;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.img2{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.img2 .second{
+    background-image: url(./images/Keyboard.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 445px;
+    height: 480px;
+}
+
+.img2 img{
+    box-shadow: rgba(145, 145, 145, 0.925) 1px 1px 9px;
+    border-radius: 22px;
+}
+
+.last {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.skill {
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.skill img {
+    box-shadow: #F16718 2px 2px 8px;
+    width: 65px;
+    height: 65px;
+    background: #f26522;
+    border-radius: 18px;
+}
+
+.skill h3{
+    color: #162542;
+    min-height: 56px;  
+    font-size: 24px;     
+    line-height: 28px;
+    font-weight: 900;
+    display: flex;
+    align-items: flex-start; 
+}
+
+.skill p {
+    font-size: 15px;
+    color: #6c7a96;   
+    line-height: 1.7;
+}
+
+span{
+    color: #6c7a96;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.p{
+    color: #7B8BAD;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* tablet */
+
+@media (max-width: 1200px){
+
+    .images{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .text2 h2{
+        font-weight: 900;
+        font-size: 37px;
+        line-height: 36px;
+        width: 255px;
+    }
+
+    .text2 p{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        width: 398px;
+    }
+
+    .order{
+        display: flex;
+        justify-content: space-between;
+        width: 1000px;
+
+    }
+
+    .order img{
+        width: 478px;
+        height: 425px;
+    }
+
+    .text{
+        width: 373px;
+        height: 312px;
+    }
+    .text h1{
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 48px;
+    }
+    .text p{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .img2 img{
+        width: 300px;
+        height: 563px;
+
+    }
+
+    .img2 .second{
+        background-image: url(./images/Group\ 3\ Copy.svg);
+        height: 563px;
+        border-radius: 20px;
+        width: 100%;
+    }
+
+    .last{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
+}
+
+@media (max-width: 966px){
+    .order{
+        display: flex;
+        justify-content: start;
+        gap: 50px;
+    }
+}
+
+/* mobile */
+
+
+@media (max-width: 790px){
+    
+    .order{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+    .aaa{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .order .orange{
+        background-image: url(./images/AAAAA.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 30px;
+
+    }
+
+    .img2 .first{
+        width: 200px;
+        height: fit-content;
+    }
+
+    .images img{
+        width: 200px;
+    }
+
+    .img2 .second{
+        height: 376px;
+
+    }
+
+    .text2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .last{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .skill{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 700px){
+    .img2 .first{
+        width: 200px;
+        height: fit-content;
+    }
+
+    .img2 .first{
+        height: 300px;
+    }
+
+    .img2 .second{
+        height: 300px;
+        
+    }
+}
