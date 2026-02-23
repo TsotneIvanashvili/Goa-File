@@ -123,7 +123,8 @@ main{
 .images{
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
+    justify-content: space-between;
+    align-items: center;
     gap: 100px;
 }
 
@@ -226,12 +227,16 @@ span{
     .images{
         display: flex;
         flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .img2{
+        width: 100%;
     }
 
     .text2{
         display: flex;
         justify-content: space-between;
-        align-items: center;
         flex-direction: row;
         width: 100%;
     }
