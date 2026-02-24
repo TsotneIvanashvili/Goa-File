@@ -220,7 +220,6 @@ span{
 }
 
 
-/* tablet */
 
 @media (max-width: 1200px){
 
@@ -310,7 +309,7 @@ span{
     }
 }
 
-/* mobile */
+
 
 
 @media (max-width: 790px){
