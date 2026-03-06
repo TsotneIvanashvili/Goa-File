@@ -17,12 +17,12 @@
 
 
 // 5) console.log() ის საშუალებით კონსოლში გამოიტანეთ 3-3 მაგალითი მათემატიკურ ოპერატორებზე.
-console.log(3 * 5);
-console.log(3 / 5);
-console.log(3 + 5);
-console.log(3 - 5);
-console.log(10 % 2);
-console.log(2 ** 3);
+// console.log(3 * 5);
+// console.log(3 / 5);
+// console.log(3 + 5);
+// console.log(3 - 5);
+// console.log(10 % 2);
+// console.log(2 ** 3);
 
 
 
@@ -46,3 +46,14 @@ console.log(2 ** 3);
 
 
 
+const greet = " "
+const msg = document.getElementById("Haa")
+
+if(greet === ""){
+    console.log(greet + "Guest");
+    
+}
+else{
+    console.log(greet + msg);
+    
+}
