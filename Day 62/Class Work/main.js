@@ -50,10 +50,12 @@ const greet = " "
 const msg = document.getElementById("Haa")
 
 if(greet === ""){
-    console.log(greet + "Guest");
+    msg.textContent += "Guest"
     
 }
 else{
-    console.log(greet + msg);
+    msg.textContent += greet
     
 }
+
+
