@@ -1,21 +1,25 @@
-// 1) შექმენი 3-ი ცვლადი ჯერ შეინახეთ თქვენი სახელი,გვარი,საყვარელი სპორტი, სტრინგ ლიტერალის გამოყენებით გამოიტანეთ ერთი დიდი წინადადება.
+const moves = ["rock", "paper", "scissors"];
 
-// 2)შექმენი სია სადაც შეინახავთ ნებისმიერ მონაცემთა ტიპის ელემენტს, შენი დავალებაა ამოიღო სიიდან ერთი რანმომული ელემენტი და გამოიტანო კონსოლში, მინიშნება: Math.random()
-
-
-
-const namee = "Tsotne";
-const lName = "Ivanashvili";
-const favSport = "Boxing";
-
-console.log(`My  Name is: ${namee} ${lName}, My Favourite Sport is: ${favSport}`);
-
-
-const list = ["apple", 25, true, {name: "Luka"}, [1, 2, 3]];
+let user = prompt("Enter Your Move (Rock, Paper, Scissors):").toLowerCase();
 
 function random(arr) {
     const randomIndex = Math.floor(Math.random() * arr.length);
-    console.log(arr[randomIndex]);
+    return arr[randomIndex];
 }
 
-random(list);
+const computer = random(moves);
+
+console.log("Computer:", computer);
+
+if (user === "rock" && computer === "paper") {
+    alert("You Lose");
+}
+else if (user === "scissors" && computer === "paper") {
+    alert("You Win");
+}
+else if (user === "rock" && computer === "scissors") {
+    alert("You Win");
+}
+else if (user === computer) {
+    alert("It's a Tie");
+}
