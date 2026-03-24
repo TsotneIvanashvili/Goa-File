@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(30, 54%, 90%);
+    font-family: "Outfit", sans-serif;
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+}
+
+.content{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    overflow: hidden;
+}
+
+h1{
+    font-family: "Young Serif", serif;
+}
+
+.maincontent{
+    width: 90%;
+    overflow: hidden;
+}
+
+img{
+    border-radius: 20px;
+    width: 90%;
+}
+
+
+
+.purple{
+    color: hsl(332, 51%, 32%);
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.purple ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ingredients li::marker{
+    color: hsl(14, 45%, 36%);
+}
+
+li{
+    color: hsl(30, 10%, 34%);
+}
+
+h2{
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+.ingredients ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+p{
+    color: hsl(30, 10%, 34%);
+}
+
+
+.instructions ol{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.instructions li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+.aa{
+    display: flex;
+    justify-content: space-around;
+}
+
+hr{
+    background-color: hsl(30, 18%, 87%);
+}
+
+strong{
+    color: hsl(14, 45%, 36%);
+}
+
+@media (max-width: 768px){
+
+    main{
+        align-items: start;
+                height: 100%;
+
+    }
+
+    .content{
+        align-items: column;
+        border-radius: 0;
+        width: 100%;
+        justify-content: start;
+        padding-top: 0;
+    }
+
+    .maincontent{
+        overflow: auto;
+    }
+
+    img{
+        width: 100%;
+        border-radius: 0;
+    }
+
+
+}
