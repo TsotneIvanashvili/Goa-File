@@ -1,9 +1,7 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -33,10 +31,7 @@ button {
   font: inherit;
 }
 
-h1,
-h2,
-h3,
-p {
+h1,h2,h3,p {
   margin-top: 0;
 }
 
@@ -153,6 +148,7 @@ main {
   width: 24px;
   height: 18px;
   max-width: none;
+  display: none;
 }
 
 .mobile-nav-backdrop,
@@ -455,6 +451,10 @@ main {
   .feature-list,
   .article-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .menu-button__icon{
+    display: block;
   }
 
   .footer__inner {

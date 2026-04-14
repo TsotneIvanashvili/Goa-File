@@ -211,50 +211,6 @@
     </div>
   </footer>
 
-  <script>
-    const siteHeader = document.querySelector(".site-header");
-    const menuButton = document.querySelector(".menu-button");
-    const mobileNav = document.querySelector(".mobile-nav");
-    const mobileBackdrop = document.querySelector(".mobile-nav-backdrop");
-    const menuIcon = document.querySelector(".menu-button__icon");
-    const mobileLinks = document.querySelectorAll(".mobile-nav a");
-    const mobileBreakpoint = window.matchMedia("(max-width: 950px)");
 
-    function closeMenu() {
-      siteHeader.classList.remove("site-header--open");
-      menuButton.setAttribute("aria-expanded", "false");
-      menuButton.setAttribute("aria-label", "Open navigation menu");
-      menuIcon.src = "./images/icon-hamburger.svg";
-      document.body.classList.remove("menu-open");
-    }
-
-    function openMenu() {
-      siteHeader.classList.add("site-header--open");
-      menuButton.setAttribute("aria-expanded", "true");
-      menuButton.setAttribute("aria-label", "Close navigation menu");
-      menuIcon.src = "./images/icon-close.svg";
-      document.body.classList.add("menu-open");
-    }
-
-    menuButton.addEventListener("click", function () {
-      if (siteHeader.classList.contains("site-header--open")) {
-        closeMenu();
-      } else {
-        openMenu();
-      }
-    });
-
-    mobileBackdrop.addEventListener("click", closeMenu);
-
-    mobileLinks.forEach(function (link) {
-      link.addEventListener("click", closeMenu);
-    });
-
-    mobileBreakpoint.addEventListener("change", function (event) {
-      if (!event.matches) {
-        closeMenu();
-      }
-    });
-  </script>
 </body>
 </html>
