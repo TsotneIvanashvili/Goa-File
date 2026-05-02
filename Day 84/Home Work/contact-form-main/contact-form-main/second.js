@@ -15,7 +15,7 @@ function create(e) {
         h2.innerHTML = "No More Users!"
 
         ul.appendChild(h2)
-        button.innerHTML = "<button disabled>Ola</button>"
+        button.innerHTML = "<button disabled>Stop!</button>"
         button.style.cursor = "not-allowed"
         return
 
