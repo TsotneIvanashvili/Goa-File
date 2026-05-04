@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+}
+
+.products {
+    flex: 2;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.cart {
+    flex: 1;
+    border: 2px solid black;
+    padding: 20px;
+    height: fit-content;
+}
+
+.cart-item {
+    margin-bottom: 10px;
+}
+
+.total {
+    margin-top: 15px;
+    font-weight: bold;
+}

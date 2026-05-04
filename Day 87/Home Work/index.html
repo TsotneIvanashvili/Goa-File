@@ -3,12 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <div class="products">
+        <h2>Products</h2>
 
-    <script src="./main.js"></script>
-    
+        <div class="product">
+            <span>Product 1 - $10</span>
+            <button >Add</button>
+        </div>
+
+        <div class="product">
+            <span>Product 2 - $15</span>
+            <button >Add</button>
+        </div>
+
+        <div class="product">
+            <span>Product 3 - $20</span>
+            <button >Add</button>
+        </div>
+
+        <div class="product">
+            <span>Product 4 - $25</span>
+            <button >Add</button>
+        </div>
+
+        <div class="product">
+            <span>Product 5 - $30</span>
+            <button >Add</button>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h2>Cart</h2>
+        <div id="cartItems"></div>
+        <div class="total">Total: $<span id="total">0</span></div>
+    </div>
+
+
 </body>
 </html>
