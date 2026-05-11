@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <style>
+    body {
+      margin: 40px;
+      font-family: serif;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      gap: 5px;
+      background-color: #555;
+      padding: 5px;
+      width: fit-content;
+    }
+
+    .grid div {
+      background-color: #444;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .a { 
+        grid-column: span 2; 
+    }
+    .d { 
+        grid-column: span 2; 
+    }
+    .e {
+      grid-column: 1 / -1;
+      background-color: transparent;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="grid">
+    <div class="a">A</div>
+    <div>B</div>
+    <div>C</div>
+    <div class="d">D</div>
+    <div class="e">E</div>
+  </div>
+
+</body>
+</html>
