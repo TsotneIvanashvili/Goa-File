@@ -41,9 +41,7 @@ if (number % 2 === 0) {
 
 let totalPrice = 150;
 
-let discount = totalPrice > 100
-  ? "20% ფასდაკლება"
-  : "ფასდაკლების გარეშე";
+let discount = totalPrice > 100 ? "20% ფასდაკლება" : "ფასდაკლების გარეშე";
 
 console.log(discount);
 

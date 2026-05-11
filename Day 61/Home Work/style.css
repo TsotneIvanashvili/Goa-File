@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width: 90%;
+    height: 200px;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(80, 140, 200, 0.8);
+    animation: grow 4s linear infinite;
+}
+
+@keyframes grow {
+    from {
+        width: 40px;
+        height: 40px;
+    }
+    to {
+        width: 180px;
+        height: 180px;
+        margin-left: 30%;
+    }
+}
+
