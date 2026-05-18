@@ -575,14 +575,62 @@ def digital_root(n):
     return n
     
 
+# 8. Counting Duplicates
+def duplicate_count(text):
+    
+    txt = set()
+    text = text.lower()
+    
+    for i in text:
+        if text.count(i) >= 2:
+            txt.add(i)
+            
+    return len(txt)
+
+
+# 9. Bit Counting
+def count_bits(n):
+    num = 0
+    
+    while n > 0:
+        num += n % 2
+        n = n // 2
+        
+    return num
 
 
 
+# 10. Duplicate Encoder
+def duplicate_encode(word):
+    txt = ""
+    word = word.lower()
+    
+    for i in word:
+        if word.count(i) >= 2:
+            txt += ")"
+        else:
+            txt += "("
+            
+    return txt
 
 
 
-
-
+# 11. Replace With Alphabet Position
+def alphabet_position(text):
+    letters = [1, "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    lst = []
+    text = text.lower()
+    
+    
+    for i in text:
+        if i in letters:
+            lst.append(str(letters.index(i)))
+            
+        
+        
+    return " ".join(lst)
+    
+    
 
 
 
