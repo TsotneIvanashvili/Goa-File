@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8F8;
+    font-family: sans-serif;
+}
+
+main{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    height: 100vh;
+}
+
+
+.Div{
+    width: 400px;
+    height: fit-content;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 600px;
+    overflow: hidden;
+        box-shadow: 1px 1px 30px black;
+
+}
+
+.mainDiv{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    border-radius: 20px;
+    height: 270px;
+}
+
+
+button{
+    background-color: #2F4F3E;
+    color: white;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.quantity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+h1{
+    font-weight: 400;
+    color: #111111;
+}
+
+h2{
+    font-weight: 400;
+    color: #444444;
+}
+
+
+.quantity button{
+    width: 40px;
+    border: none;
+    border-radius: 999px;
+    font-size: 30px;
+    border: 2px solid #2F4F3E;
+    transition: 0.3s;
+}
+
+.add{
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 7px;
+    transition: 0.3s;
+    border: 2px solid #2F4F3E;
+}
+
+
+.del{
+    background-color: rgb(143, 0, 0);
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 7px;
+    transition: 0.3s;
+    border: 2px solid rgb(143, 0, 0);
+}
+
+
+p{
+    color: #949494;
+}
+
+
+.del:hover{
+    border: 2px solid rgb(143, 0, 0);
+    background-color: transparent;
+    color: rgb(143, 0, 0);
+}
+
+button:hover{
+    background-color: transparent;
+    border: 2px solid #2F4F3E;
+    color: #2F4F3E;
+}
+
+nav{
+    background-color: #111111;
+    height: 70px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #E5E5E5;
+    transform: scale(1.1);
+    
+}
+

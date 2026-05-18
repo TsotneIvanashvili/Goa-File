@@ -25,12 +25,12 @@
 // დაწერე async ფუნქცია getUserName(), რომელიც უბრალოდ აბრუნებს სტრინგს "გიორგი". 
 // გამოიძახე ეს ფუნქცია და მიღებული შედეგი (Promise) დაბეჭდე .then()-ის საშუალებით.
 
-async function getUserName(name){
-    return name
+// async function getUserName(name){
+//     return name
     
-}
+// }
 
-getUserName("გიორგი").then(user => console.log(user))
+// getUserName("გიორგი").then(user => console.log(user))
 
 
 // 4)მოიძიეთ ინფორმაცია try და catch ზე, მეც ვისაუბრებ ამაზე დეტალურად მაგრამ მაინც
@@ -45,3 +45,20 @@ getUserName("გიორგი").then(user => console.log(user))
 // შექმენი მეორე ფუნქცია processData, რომელიც იქნება async.
 
 // processData-ს შიგნით გამოიყენე await, რომ დაელოდო getData-ს შედეგს, გაამრავლო ის 2-ზე და დაბეჭდო კონსოლში.
+
+
+
+
+
+
+
+// 2)ეცადეთ გააკეთოთ მსგავსი საიტი, input ში შეყვანილი მონაცემის მიხედვით დააბრუნეთ გითჰაბის მომხმარებლის მონაცემები და დაარენდერეთ
+// გამოიყენეთ ეს API link (`https://api.github.com/users/${user}`)
+
+
+
+
+
+
+
+
