@@ -631,8 +631,38 @@ def alphabet_position(text):
     return " ".join(lst)
     
     
+# 12. Find The Parity Outlier
+def find_outlier(integers):
+    even = []
+    odd = []
+    
+    for i in integers:
+        if i % 2 == 0:
+            even.append(i)
+        else:
+            odd.append(i)
+            
+    if len(even) > len(odd):
+        return odd[0]
+    else:
+        return even[0]
 
 
+
+# 5 Kyu
+
+# 1. Moving Zeros To The End
+def move_zeros(lst):
+    other = []
+    zeros = []
+    
+    for i in lst:
+        if i > 0:
+            other.append(i)
+        else:
+            zeros.append(i)
+            
+    return other + zeros
 
 
 
