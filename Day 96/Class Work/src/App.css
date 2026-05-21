@@ -1,0 +1,31 @@
+.whiteDiv{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #D6E1F0;
+}
+
+.maindiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+img{
+  width: 100%;
+  border-radius: 10px;
+}
+
