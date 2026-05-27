@@ -1,0 +1,51 @@
+
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+main{
+  height: 100vh;
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 70%;
+  
+}
+
+.card{
+  box-shadow: 0px 1px 32px rgb(169, 169, 169);
+  width: 300px;
+  height: 250px;
+  border-radius: 20px;
+  padding: 10px;
+
+}
+
+.img{
+    background-image: linear-gradient(to bottom, red, rgb(127, 0, 142));
+    border-radius: 100px;
+    position: relative;
+    top: -30px;
+    left: 20px;
+    width: fit-content;
+    padding: 5px;
+}
+
+img{
+  width: 30px;
+  padding: 10px;
+
+}
+
+
+a{
+  text-decoration: none;
+  color: rgb(205, 67, 90);
+  font-weight: 600;
+}
