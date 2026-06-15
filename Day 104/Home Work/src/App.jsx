@@ -35,7 +35,7 @@ function App() {
         <form className="w-full">
           <textarea
             name="text"
-            value={text}
+            
             onChange={(e) => setText(e.target.value)}
             className="bg-[#2A2B37] h-50 w-full focus:outline-0 text-[#E4E4EF] text-[20px] rounded-xl p-5 resize-none"
             type="text"
