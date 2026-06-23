@@ -46,7 +46,7 @@ function App() {
       <div className="flex gap-5 w-300 flex-wrap">
         {products.map((item) => {
           return (
-            <div className="w-70 border-[2px] p-2 border-black  ">
+            <div className="w-70 border-2 p-2 border-black  ">
               <img className="w-full" src={item.image} alt="" />
               <p>{item.name}</p>
               <p>{item.title}</p>
@@ -65,14 +65,14 @@ function App() {
         })}
       </div>
 
-      <div className="border-[2px] flex flex-col items-center rounded-xl gap-20 p-20 w-[50%]">
+      <div className="border-2 flex flex-col items-center rounded-xl gap-20 p-20 w-[50%]">
         <p className="text-5xl">Cart</p>
 
         <div className="flex w-full flex-wrap gap-10">
           {cart.length > 0
             ? cart.map((item) => {
                 return (
-                  <div className="w-full border-[2px] p-2 gap-10 border-black flex ">
+                  <div className="w-full border-2 p-2 gap-10 border-black flex ">
                     <p>{item.name}</p>
                     <p>{item.title}</p>
                     <p>${item.price}</p>

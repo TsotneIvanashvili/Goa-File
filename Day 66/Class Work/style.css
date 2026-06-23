@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.heroSection {
+    display: grid;
+    grid-template-columns: 560px 650px 1fr;
+    height: 100vh;
+    min-height: 750px;
+    position: relative;
+}
+
+.leftPanel {
+    background-color: #111111;
+    display: flex;
+    padding: 0 60px;
+    overflow: visible;
+    position: relative;
+    z-index: 2;
+}
+
+.galleryTitle {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 125px;
+    line-height: 110px;
+    color: white;
+    text-transform: uppercase;
+    white-space: nowrap;
+    position: relative;
+    left: 130px;
+    letter-spacing: 2px;
+    top: 200px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.titleClip {
+    position: absolute;
+    left: 560px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 10;
+    display: flex;
+}
+
+.titleClip .galleryTitle {
+    position: relative;
+    left: -370px;
+    color: #111111;
+}
+
+.imagePanel {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.rightPanel {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    position: absolute;
+    top: 300px;
+    right: 130px;
+    z-index: 9;
+    background-color: transparent;
+}
+
+.galleryDesc {
+    font-size: 21px;
+    line-height: 1.75;
+    color: #555555;
+    max-width: 450px;
+}
+
+.locationBtn {
+    display: inline-flex;
+    align-items: stretch;
+    width: fit-content;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background: none;
+    font-family: inherit;
+    
+}
+
+.btnLabel {
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    padding: 28px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.btnArrow {
+    background-color: #c8906a;
+    transition: background-color 0.3s ease;
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 1;
+    padding: 28px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.locationBtn:hover .btnLabel {
+    background-color: #c8906a;
+}
+
+.locationBtn:hover .btnArrow {
+    background-color: #111111;
+}
+
+/* ── Your Day At The Gallery ── */
+.daySection {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.dayTop {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0;
+    padding: 0 130px 40px;
+}
+
+.dayText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    padding-right: 60px;
+}
+
+.dayTitle {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 1;
+    color: #111111;
+    text-transform: uppercase;
+}
+
+.dayDesc {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #555555;
+    max-width: 300px;
+}
+
+.dayImageTop {
+    overflow: hidden;
+}
+
+.dayBottom {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 15px;
+    padding: 0 130px;
+}
+
+.dayImageLeft {
+    overflow: hidden;
+}
+
+.dayRight {
+    display: grid;
+    gap: 15px;
+    grid-template-rows: 1fr 1fr;
+}
+
+.dayImageSmall {
+    overflow: hidden;
+}
+
+.sectionImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.inspireBox {
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    padding: 48px 40px;
+}
+
+.inspireTitle {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 1;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.inspireDesc {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #ffffff;
+    max-width: 280px;
+}
+
+.siteFooter {
+    background-color: #111111;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding: 60px 130px;
+    gap: 40px;
+}
+
+.footerLogo {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.footerDesc {
+    font-size: 15px;
+    line-height: 1.75;
+    color: #888888;
+}
+
+.footerSocials {
+    display: flex;
+    gap: 24px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.socialIcon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
+}
+
+@media (max-width: 1620px) {
+
+    .heroSection {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .leftPanel {
+        display: none;
+    }
+
+
+    .titleClip {
+        position: absolute;
+        left: 45%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 60px 60px 200px;
+        overflow: visible;
+        pointer-events: none;
+    }
+
+    .titleClip .galleryTitle {
+        position: static;
+        color: #111111;
+        font-size: 75px;
+        line-height: 70px;
+    }
+
+    .rightPanel {
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        right: 0;
+        margin-top: 30px;
+        padding: 0 60px;
+        background: transparent;
+        z-index: 11;
+        justify-content: flex-start;
+        gap: 40px;
+    }
+
+    .galleryDesc {
+        font-size: 18px;
+        max-width: 380px;
+    }
+
+    .dayTop {
+        padding: 0 60px 40px;
+    }
+
+    .dayBottom {
+        padding: 0 60px;
+    }
+
+    .siteFooter {
+        padding: 60px 60px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .heroSection {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: auto;
+    }
+
+    .leftPanel {
+        display: none;
+    }
+
+    .imagePanel {
+        height: 55vw;
+        min-height: 240px;
+        flex-shrink: 0;
+    }
+
+    .titleClip {
+        position: static;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        background-color: #ffffff;
+        padding: 48px 24px 0;
+        overflow: visible;
+        display: block;
+        pointer-events: auto;
+    }
+
+    .titleClip .galleryTitle {
+        position: static;
+        font-size: 79px;
+        line-height: 86px;
+        color: #111111;
+    }
+
+    .rightPanel {
+        position: static;
+        top: auto;
+        left: auto;
+        right: auto;
+        margin: 0;
+        padding: 32px 24px 64px;
+        justify-content: flex-start;
+        gap: 40px;
+        background: #ffffff;
+        z-index: auto;
+    }
+
+    .galleryDesc {
+        font-size: 16px;
+        max-width: 100%;
+    }
+    .daySection {
+        margin: 20px;
+    }
+
+    .dayTop {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+    }
+
+    .dayImageTop {
+        order: -1;
+        height: 280px;
+    }
+
+    .dayText {
+        padding: 48px 24px;
+    }
+
+    .dayTitle {
+        font-size: 66px;
+    }
+
+    .dayDesc {
+        max-width: 100%;
+    }
+
+    .dayBottom {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+
+    .dayImageLeft {
+        height: 280px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .dayRight {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .dayImageSmall {
+        height: 240px;
+    }
+
+    .inspireBox {
+        padding: 48px 24px;
+    }
+
+    .inspireTitle {
+        font-size: 48px;
+    }
+
+    .siteFooter {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 48px 24px;
+    }
+
+    .footerSocials {
+        justify-content: flex-start;
+    }
+}
