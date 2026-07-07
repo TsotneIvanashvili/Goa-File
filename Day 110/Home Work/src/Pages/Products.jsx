@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import carsData from "../utils/Cars";
-import { GetLocal } from "../utils/Localstorage";
+import { GetLocal, SetLocal } from "../utils/Localstorage";
 
 function Products() {
   const [cart, setCart] = useState(GetLocal("Cart") || []);
+
+
+  useEffect( () => {
+    SetLocal("Cart", cart)
+  }, [cart])
 
   const addToCart = (prod) => {
       setCart((prevCart) => {
