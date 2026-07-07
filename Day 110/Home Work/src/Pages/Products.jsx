@@ -3,23 +3,24 @@ import carsData from "../utils/Cars";
 import { GetLocal } from "../utils/Localstorage";
 
 function Products() {
-
-    const [cart, setCart] = useState(GetLocal("Cart") || [])
-
+  const [cart, setCart] = useState(GetLocal("Cart") || []);
 
   const addToCart = (prod) => {
-    if(cart.find( car => car.id === prod.id)){
-        const newCart = []
-        setCart([...cart, prod])
-    }
-    else{
-        setCart([...cart, prod])
-    }
-    
-  };
+      setCart((prevCart) => {
+        const exists = prevCart.find((item) => item.id === prod.id);
 
-  console.log(cart);
-  
+        if (exists) {
+          return prevCart.map((item) =>
+            item.id === prod.id
+              ? { ...item, quantity: item.quantity + 1 }
+              : item,
+          );
+        }
+
+        return [...prevCart, { ...prod, quantity: 1 }];
+      });
+
+  };
 
   return (
     <main>
@@ -33,16 +34,21 @@ function Products() {
               <img src={car.image} alt="" />
 
               <div className="w-[95%] flex flex-col justify-between h-full gap-2">
-               <div>
-                 <h1>
-                  <span className="font-bold">Brand:</span> {car.brand}
-                </h1>
-                <h1>
-                  <span className="font-bold">Model:</span> {car.model}
-                </h1>
-               </div>
-               
-                <button onClick={() => {addToCart(car)}} className="bg-[#2D3E2C] cursor-pointer p-2 mb-2 rounded-[5px] w-full  text-[#E4FD97]">
+                <div>
+                  <h1>
+                    <span className="font-bold">Brand:</span> {car.brand}
+                  </h1>
+                  <h1>
+                    <span className="font-bold">Model:</span> {car.model}
+                  </h1>
+                </div>
+
+                <button
+                  onClick={() => {
+                    addToCart(car);
+                  }}
+                  className="bg-[#2D3E2C] cursor-pointer p-2 mb-2 rounded-[5px] w-full  text-[#E4FD97]"
+                >
                   Add To Cart!
                 </button>
               </div>
