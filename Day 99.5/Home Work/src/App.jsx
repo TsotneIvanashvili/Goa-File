@@ -5,16 +5,19 @@ import FetchData from './utils/Fetch'
 function App() {
 
   const [user, setUser] = useState("")
+  const [found, setFound] = useState(null)
   const [mode, setMode] = useState(false)
 
+  
+  
 
   useEffect( () => {
-    FetchData(`https://api.github.com/users/${user}`)
-    
+    FetchData(`https://api.github.com/users/${user}`).then(res => setFound(res))
+
     
   },[user])
 
-
+console.log(found);
 
   return (
 
@@ -77,37 +80,37 @@ function App() {
           :
           <div className='flex w-[50%] bg-[#202947] '>
             <div className='bg-white rounded-full p-2  h-fit'>
-              <img src="public/octocat.png" className='w-20 h-fit ' alt="" />
+              <img src={found.avatar_url} className='w-20 h-fit ' alt="" />
             </div>
             <div>
               <div>
-                <p>The Octocar</p>
+                <p>{found.name}</p>
                 <p>Joined 17 Oct 2008</p>
               </div>
-              <p>octocat</p>
-              <p>This profile has no bio</p>
+              <p>{found.name}</p>
+              <p>{found.bio}</p>
               <div>
                 <div>
                   <p>Repos</p>
-                  <p>8</p>
+                  <p>{found.public_repos}</p>
                 </div>
                 <div>
                   <p>Followers</p>
-                  <p>6767</p>
+                  <p>{found.followers}</p>
                 </div>
                 <div>
                   <p>Following</p>
-                  <p>9</p>
+                  <p>{found.following}</p>
                 </div>
               </div>
 
               <div>
                 <div>
                   <h1>San Francisco</h1>
-                  <a href="https://github.blog">https://github.blog</a>
+                  <a href={found.url}>View Profile</a>
                 </div>
                 <div>
-                  <h1>Not Available</h1>
+                  <h1>{found.twitter_username? found.twitter_username : "Not Available"}</h1>
                   <h1>github</h1>
                 </div>
               </div>
