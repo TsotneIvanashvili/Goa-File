@@ -1,0 +1,1 @@
+// davasrule wina davalebebi da proeqtebi davaleba ar gvqonia sxva
